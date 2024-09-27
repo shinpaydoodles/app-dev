@@ -1,0 +1,126 @@
+.sidebar {
+    background-color: #ffffff;
+    color: black;
+    width: 250px;
+    padding: 15px;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease;
+    transform: translateX(-100%);
+    
+}
+
+.sidebar.visible {
+    transform: translateX(0);
+}
+
+
+.sidebar-header {
+    background-color: #7D0D1E;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 95.3%;
+    height: 5%;
+    margin-top: -25px;
+    margin-left: -15px;
+}
+
+.menu-item {
+    display: block;
+    padding: 10px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 5px;
+    margin: 5px 15px;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-left: -5px;
+}
+
+.menu-item:hover {
+    background-color: #d4d4d4;
+}
+
+.menu-item:nth-child(3) {
+    background-color: #7D0D1E;
+    color: white;
+}
+
+.menu-item:nth-child(3):hover {
+    background-color: #b0152f;
+}
+
+.events, .holidays {
+    padding-left: 10px;
+    margin: 5px 15px;
+    display: block;
+    font-size: 16px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: -5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.events .dot, .holidays .dot {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.events .dot {
+    background-color: red;
+}
+
+.holidays .dot {
+    background-color: orange;
+}
+
+.separator-line {
+    background-color: #7D0D1E;
+    height: 3px;
+    margin: 10px 15px;
+    width: 112%;
+    margin-left: -15px;
+}
+
+.school-logo {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.school-logo img {
+    width: 80%;
+}
+
+.social-links {
+    margin-top: -23px;
+    margin-left: 100px;
+}
+
+.social-links a {
+    margin: 10px;
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.social-links a:hover {
+    color: #7D0D1E;
+}
+
+.visit-us-header {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #7D0D1E;
+    margin-left: -7px;
+}
