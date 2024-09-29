@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Sidebar from "./Sidebar.jsx";
+
 
 function Header() {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -20,7 +20,26 @@ function Header() {
             </header>
 
             <div className={isSidebarOpen ? "sidebar open" : "sidebar"}>
-                <Sidebar />
+                <h1 className="dashboard" id="dashboard-title">School Events <br></br> Manager</h1>
+            <button id="group2" className="hamburger2" onClick={toggleSidebar}>
+                    <span className="barx"></span>  
+                    <span className="barx2"></span>
+                </button>
+                <div>
+                <div className="week">Week</div>
+                <div className="month">Month</div>
+                <div className="divider"></div>
+                </div>
+                <div>
+                <div className="events">Events</div>
+                <div className="holidays">Holidays</div>
+                <div className="divider2"></div>
+                <div className="logo">
+                <img src="/public/cic.png" alt="cic logo"/>
+                </div>
+                <div className="settings">Settings</div>
+                <div className="visit">Visit us</div>  
+                </div>
             </div>
         </>
     );

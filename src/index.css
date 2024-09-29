@@ -36,7 +36,7 @@
 }
 
 .hamburger:hover span {
-  background-color: black;
+  background-color: rgb(255, 255, 255);
 } 
 
 #bar1 {
@@ -107,17 +107,17 @@ li{
   gap: 10px;
   text-align: center;
   font-family: Arial, sans-serif;
-  font-weight: 
-  bold;
+  font-weight: bold;
 }
 .base {
   margin: 150px auto;
   width: 80%;
-  max-width: 900px;
+  max-width: 1200px;
   border-radius: 75px ;
   background-color: rgb(255, 255, 255);
   box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.1);
   padding: 45px;
+  height: 800px;
   
 }
 .blank{
@@ -130,22 +130,152 @@ li{
 }
 
 .sidebar {
+background-color: #ffffff;
+position: absolute;
+display: block;
+height: 1200px;
+width: 300px;
+left: -300px;
+top: 0px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+transition: transform 0.3s ease;
+}
+.sidebar.open{
+  transform: translate(300px);
+  display: block;
+  height: 1200px;
+}
+
+.dashboard {
+background-color: #ffffff;
+font-size: 24px;
+margin-left: 20px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+margin-top: 20px;
+
+}
+#dashboard-title{
+  top: 0px;
+  left: -20px;
+  margin-top: 0px;
+  position: absolute;
+  background-color: #800000;
+  height: 70px;
+  width: 300px;
+  justify-content: center; 
+  align-items: center; 
+  color: white; 
+  text-align: left; 
+  padding-left: 20px; 
+  padding-top: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#group2 {
+  position: absolute;
+  left: 230px;
+  top: 25px;
+  width: 50px;
+  height: 40px;
+}
+.hamburger2 {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+}
+
+.hamburger2 span {
+  display: block;
+  height: 7px;
+  width: 50px;
+  background-color: gray;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  top: 15px;
+  transition: transform 0.3s ease;
+
+}
+
+.hamburger2:hover span {
+  background-color: rgb(255, 255, 255);
+} 
+
+.barx {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 22px;
+  height: 0px;
+  transform: rotate(45deg);
+}
+
+.barx2 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 20px;
+  width: 22px;
+  height: 0px;
+  transform: rotate(-45deg);
+}
+
+li{
+  list-style-type: none;
+}
+.divider{
+  background-color: #B32A27;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 275px;
+  width: 300px;
+  height: 5px;
+}
+.week, .month {
+background-color: #ffffff;
+padding: 20px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+position: absolute;
+top: 120px;
+width: 260px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.month{
+  top: 200px;
+} 
+.divider2{
+  background-color: #B32A27;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 455px;
+  width: 300px;
+  height: 5px;
+}
+.events, .holidays {
+background-color: #ffffff;
+padding: 20px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+position: absolute;
+top: 300px;
+width: 260px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} 
+.holidays{
+  top: 380px;
+}
+
+.settings, .visit {
   background-color: #ffffff;
-  top: 0;
-  left: -300px;
-  position: absolute; 
-  width: 250px; 
-  height: 100%;
-  z-index: 999;
-  transition: transform 0.3s ease; 
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); 
-}
-
-.sidebar.open {
-  transform: translateX(250px); 
-}
-
-.title {
-background-color: #800000;
-}
-
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 800px;
+  width: 260px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  } 
+  .visit{
+    top: 900px;
+  }
