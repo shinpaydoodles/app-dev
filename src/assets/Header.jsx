@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import { Link } from "react-router-dom";
 
 function Header() {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -21,24 +21,24 @@ function Header() {
 
             <div className={isSidebarOpen ? "sidebar open" : "sidebar"}>
                 <h1 className="dashboard" id="dashboard-title">School Events <br></br> Manager</h1>
-            <button id="group2" className="hamburger2" onClick={toggleSidebar}>
-                    <span className="barx"></span>  
+                <button id="group2" className="hamburger2" onClick={toggleSidebar}>
+                    <span className="barx"></span>
                     <span className="barx2"></span>
                 </button>
                 <div>
-                <div className="week">Week</div>
-                <div className="month">Month</div>
-                <div className="divider"></div>
+                    <Link to="/week" className="week" onClick={() => setIsSidebarOpen(false)}>Week</Link>
+                    <Link to="/month" className="month" onClick={() => setIsSidebarOpen(false)}>Month</Link>
+                    <div className="divider"></div>
                 </div>
                 <div>
-                <div className="events">Events</div>
-                <div className="holidays">Holidays</div>
-                <div className="divider2"></div>
-                <div className="logo">
-                <img src="/public/cic.png" alt="cic logo"/>
-                </div>
-                <div className="settings">Settings</div>
-                <div className="visit">Visit us</div>  
+                    <div className="events"><span class="dot"></span>Events</div>
+                    <div className="holidays"><span class="dot2"></span>Holidays</div>
+                    <div className="divider2"></div>
+                    <div className="logo">
+                        <img src="/cic.png" alt="cic logo" />
+                    </div>
+                    <div className="settings">Settings</div>
+                    <div className="visit">Visit us</div>
                 </div>
             </div>
         </>

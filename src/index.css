@@ -78,7 +78,7 @@ li{
 
 .datebg {
   position: relative; 
-  padding: 25px;
+  padding: 35px;
   height: 60px;
   margin-top: 10px;
   background-color: rgb(201, 201, 201);
@@ -139,6 +139,7 @@ left: -300px;
 top: 0px;
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 transition: transform 0.3s ease;
+z-index: 2;
 }
 .sidebar.open{
   transform: translate(300px);
@@ -242,6 +243,7 @@ position: absolute;
 top: 120px;
 width: 260px;
 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+text-decoration: none;
 }
 .month{
   top: 200px;
@@ -255,16 +257,34 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
   height: 5px;
 }
 .events, .holidays {
-background-color: #ffffff;
-padding: 20px;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-position: absolute;
-top: 300px;
-width: 260px;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-} 
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 300px;
+  width: 260px;
+  
+  align-items: center; 
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+}
 .holidays{
   top: 380px;
+}
+.dot{
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+  background-color: #B32A27;
+}
+.dot2{
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+  background-color: #F3BB03;
 }
 
 .settings, .visit {
@@ -278,4 +298,48 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
   } 
   .visit{
     top: 900px;
+  }
+.weektitle{
+  color: #B32A27;
+  text-align: center;
+  font-size: 50px;
+}
+.anongweek{
+  color: #B32A27;
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 30px;
+}
+  .weekview{
+    position: relative; 
+    padding: 25px;
+    height: 200px;
+    margin-top: 5px;
+    background: #e5e5e5;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-blend-mode: normal;
+  }
+  #weekday {
+    color: #757575;
+    font-family: Inter;
+    font-size: 25px;
+    font-weight: 700;
+  }
+  #day {
+    color: #757575;
+    font-family: Inter;
+    font-size: 25px;
+    font-weight: 700;
+  }
+  #dilaw{
+    background-color: #F3BB03;
+    color: #ffffff;
+  }
+  #neee{
+    color: #ffffff;
+  }
+  #off{
+    background-color: #B32A27;
+    color: #ffffff;
   }

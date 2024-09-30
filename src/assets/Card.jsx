@@ -14,7 +14,10 @@ function Card(){
 
           
             <div className="datebg"><span class="num">1</span></div>
-            <div className="datebg"><span class="num">2</span></div>
+            <div className="datebg">
+                <span class="num">2</span>
+                <span class="neee">Nueva Ecija Day</span>    
+            </div>
             <div className="datebg"><span class="num">3</span></div>
             <div className="datebg"><span class="num">4</span></div>
             <div className="datebg"><span class="num">5</span></div>
@@ -27,7 +30,10 @@ function Card(){
             <div className="datebg"><span class="num">12</span></div>
             <div className="datebg"><span class="num">13</span></div>
             <div className="datebg"><span class="num">14</span></div>
-            <div className="datebg"><span class="num">15</span></div>
+            <div className="datebg">
+                <span class="num">15</span>
+                <span class="neee">Induction of Officers</span>    
+            </div>
             <div className="datebg"><span class="num">16</span></div>
             <div class="datebg"><span class="num">17</span></div>
             <div class="datebg"><span class="num">18</span></div>
