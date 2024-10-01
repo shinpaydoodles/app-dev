@@ -26,8 +26,14 @@ function Header() {
                     <span className="barx2"></span>
                 </button>
                 <div>
-                    <Link to="/week" className="week" onClick={() => setIsSidebarOpen(false)}>Week</Link>
-                    <Link to="/month" className="month" onClick={() => setIsSidebarOpen(false)}>Month</Link>
+                    <Link to="/week" className="week" onClick={() => setIsSidebarOpen(false)}>
+                    <span class="weekic"></span>
+                    <span class="weekic2"></span>
+                    <span class="weekic3"></span>
+                    <span class="weekic4"></span>
+                    Week</Link>
+                    <Link to="/month" className="month" onClick={() => setIsSidebarOpen(false)}>
+                    <span class="monthic"></span>Month</Link>
                     <div className="divider"></div>
                 </div>
                 <div>

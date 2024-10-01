@@ -1,7 +1,20 @@
-import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function MonthView() {
+    // State for controlling the modal content
+    const [modalContent, setModalContent] = useState(null);
+
+    // Function to open the modal with the corresponding content
+    const openModal = (content) => {
+        setModalContent(content);
+    };
+
+    // Function to close the modal
+    const closeModal = () => {
+        setModalContent(null);
+    };
+
     return (
         <div className="base">
             <div className="calendar">
@@ -31,20 +44,20 @@ function MonthView() {
                 <div className="datebg"><span className="num">13</span></div>
                 <div className="datebg"><span className="num">14</span></div>
 
-                <Link to="/description/induction-officers" className="datebg" id='off'>
+                <div className="datebg" id='off' onClick={() => openModal({title: 'Induction of Officers', description: 'A formal ceremony to induct the new officers.'})}>
                     <span className="num">15</span>
                     <span className="off">Induction of Officers</span>
-                </Link>
+                </div>
 
                 <div className="datebg"><span className="num">16</span></div>
                 <div className="datebg"><span className="num">17</span></div>
                 <div className="datebg"><span className="num">18</span></div>
                 <div className="datebg"><span className="num">19</span></div>
 
-                <Link to="/description/officers-meeting" className="datebg" id='off'>
+                <div className="datebg" id='off' onClick={() => openModal({title: 'Officers Meeting', description: 'Monthly meeting for discussing the officers’ agenda.'})}>
                     <span className="num">20</span>
                     <span className="off">Officers Meeting</span>
-                </Link>
+                </div>
 
                 <div className="datebg"><span className="num">21</span></div>
                 <div className="datebg"><span className="num">22</span></div>
@@ -53,10 +66,10 @@ function MonthView() {
                 <div className="datebg"><span className="num">25</span></div>
                 <div className="datebg"><span className="num">26</span></div>
 
-                <Link to="/description/leadership-seminar" className="datebg" id='off'>
+                <div className="datebg" id='off' onClick={() => openModal({title: 'Leadership Seminar', description: 'A seminar aimed at enhancing leadership skills.'})}>
                     <span className="num">27</span>
                     <span className="off">Leadership Seminar</span>
-                </Link>
+                </div>
 
                 <div className="datebg"><span className="num">28</span></div>
                 <div className="datebg"><span className="num">29</span></div>
@@ -67,6 +80,17 @@ function MonthView() {
                 <div className="blank"></div>
                 <div className="blank"></div>
             </div>
+
+
+            {modalContent && (
+                <div className="modal-overlay">
+                    <div className="modal-content">
+                        <h2>{modalContent.title}</h2>
+                        <p>{modalContent.description}</p>
+                        <button onClick={closeModal}>Close</button>
+                    </div>
+                </div>
+            )}
         </div>
     );
 }
