@@ -1,405 +1,64 @@
-.rectangle{
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 1700px;
-  height: 120px;
-  background: #800000;
-  background-blend-mode: normal;
-  box-shadow: 0px 2px 4px rgba(100,100,100,0.5);
-}
-#group {
-  position: absolute;
-  left: 16px;
-  top: 40px;
-  width: 50px;
-  height: 40px;
-}
-.hamburger {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 24px;
-  width: 30px; 
+.fc {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
 }
 
-.hamburger span {
-  display: block;
-  height: 8px;
-  width: 100%;
-  background-color: rgb(255, 255, 255);
-  border-radius: 2px;
-  transition: all 0.3s ease;
-}
-
-.hamburger:hover span {
-  background-color: rgb(232, 222, 122);
-} 
-
-#bar1 {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 22px;
-  height: 0px;
-  border: 3px solid #bdbdbd;
-}
-
-#bar2 {
-  position: absolute;
-  left: 0px;
-  top: 7px;
-  width: 22px;
-  height: 0px;
-  border: 3px solid #bdbdbd;
-}
-
-#bar3 {
-  position: absolute;
-  left: 0px;
-  top: 14px;
-  width: 22px;
-  height: 0px;
-  border: 3px solid #bdbdbd;
-}
-li{
-  list-style-type: none;
-}
-
-.sept{
-  color: white;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-weight: bold;
-  margin-left: 450px;
-  font-size: 50px;
-}
-
-.datebg {
-  position: relative; 
-  padding: 35px;
-  height: 60px;
-  margin-top: 10px;
-  background-color: rgb(201, 201, 201);
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-}
-
-
-.num {
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  font-size: 12px; 
-  font-weight: bold;
-  color: black;
-}
-
-#day {
-  color: black;
-  margin-bottom: 7px;
-
-}
-.calendar {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 10px;
-  text-align: center;
-  font-family: Arial, sans-serif;
-  font-weight: bold;
-}
-.base {
-  margin: 150px auto;
-  width: 80%;
-  max-width: 1200px;
-  border-radius: 75px ;
-  background-color: rgb(255, 255, 255);
-  box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.1);
-  padding: 45px;
-  height: 800px;
-  
-}
-.blank{
-  position: relative; 
-  padding: 25px;
-  height: 60px;
-  margin-top: 10px;
-  background-color: white;
-  border-radius: 8px;
-}
-
-.sidebar {
-background-color: #ffffff;
-position: absolute;
-display: block;
-height: 1200px;
-width: 300px;
-left: -300px;
-top: 0px;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-transition: transform 0.3s ease;
-z-index: 2;
-}
-.sidebar.open{
-  transform: translate(300px);
-  display: block;
-  height: 1200px;
-}
-
-.dashboard {
-background-color: #ffffff;
-font-size: 24px;
-margin-left: 20px;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-margin-top: 20px;
-
-}
-#dashboard-title{
-  top: 0px;
-  left: -20px;
-  margin-top: 0px;
-  position: absolute;
-  background-color: #800000;
-  height: 100px;
-  width: 300px;
-  justify-content: center; 
-  align-items: center; 
-  color: white; 
-  text-align: left; 
-  padding-left: 20px; 
-  padding-top: 20px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-#group2 {
-  position: absolute;
-  left: 230px;
-  top: 40px;
-  width: 50px;
-  height: 40px;
-}
-.hamburger2 {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 24px;
-  width: 30px;
-}
-
-.hamburger2 span {
-  display: block;
-  height: 7px;
-  width: 50px;
-  background-color: rgb(255, 255, 255);
-  border-radius: 2px;
-  transition: all 0.3s ease;
-  top: 15px;
-  transition: transform 0.3s ease;
-
-}
-
-.hamburger2:hover span {
-  background-color: rgb(232, 222, 122);
-} 
-
-.barx {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 22px;
-  height: 0px;
-  transform: rotate(45deg);
-}
-
-.barx2 {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  right: 20px;
-  width: 22px;
-  height: 0px;
-  transform: rotate(-45deg);
-}
-
-li{
-  list-style-type: none;
-}
-.divider{
-  background-color: #B32A27;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  position: absolute;
-  top: 275px;
-  width: 300px;
-  height: 5px;
-}
-.week, .month {
-background-color: #ffffff;
-padding: 20px;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-position: absolute;
-top: 120px;
-width: 260px;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-text-decoration: none;
-color: #800000;
-}
-.weekic{
-  background-color: #757575;
-  height: 10px;
-  width: 1px;
-  display: inline-block;
-  z-index: 999;
-  top: 30px;
-  margin-right: 1px;
-}
-.weekic2{
-  background-color: #757575;
-  height: 10px;
-  width: 1px;
-  display: inline-block;
-  z-index: 999;
-  top: 30px;
-  margin-right: 1px;
-  margin-left: 1px;
-}
-.weekic3{
-  background-color: #000000;
-  height: 10px;
-  width: 1px;
-  display: inline-block;
-  z-index: 999;
-  top: 30px;
-  margin-right: 1px;
-  margin-left: 1px;
-}
-.weekic4{
-  background-color: #000000;
-  height: 10px;
-  width: 1px;
-  display: inline-block;
-  z-index: 999;
-  top: 30px;
-  margin-right: 1px;
-  margin-left: 1px;
-}
-
-
-.month{
-  top: 200px;
-} 
-.divider2{
-  background-color: #B32A27;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  position: absolute;
-  top: 455px;
-  width: 300px;
-  height: 5px;
-}
-.events, .holidays {
-  background-color: #ffffff;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  position: absolute;
-  top: 300px;
-  width: 260px;
-  color: #800000;
-  
-  align-items: center; 
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
-}
-.holidays{
-  top: 380px;
-}
-.dot{
-  height: 12px;
-  width: 12px;
-  border-radius: 50%;
-  display: inline-block;
-  margin-right: 10px;
-  background-color: #B32A27;
-}
-.dot2{
-  height: 12px;
-  width: 12px;
-  border-radius: 50%;
-  display: inline-block;
-  margin-right: 10px;
-  background-color: #F3BB03;
-}
-
-.settings, .visit {
-  background-color: #ffffff;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  position: absolute;
-  top: 800px;
-  width: 260px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  } 
-  .visit{
-    top: 900px;
-  }
-.weektitle{
-  color: #800000;
-  text-align: center;
-  font-size: 50px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.anongweek{
-  color: #800000;
-  text-align: center;
-  font-size: 30px;
-  padding-bottom: 30px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-  .weekview{
-    position: relative; 
-    padding: 25px;
-    height: 200px;
-    margin-top: 5px;
-    background: #e5e5e5;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    background-blend-mode: normal;
-  }
-  #weekday {
-    color: #757575;
-    font-size: 25px;
-    font-weight: 700;
-  }
-  #day {
-    color: #757575;
-    font-family: Inter;
-    font-size: 25px;
-    font-weight: 700;
-  }
-  #dilaw{
-    background-color: #F3BB03;
-    color: #ffffff;
-  }
-  #neee{
-    color: #ffffff;
-  }
-  #off{
-    background-color: #B32A27;
-    color: #ffffff;
-  }
-  .modaloverlay{
-    display: block;
-    position: absolute;
-    z-index: 999;
-    height: 100px;
+.fc-header-toolbar {
     background-color: #800000;
-    left: 500px;
-  }
-  .modal-overlay{
-    display: block;
-    position: absolute;
-    z-index: 999;
-    height: 100px;
-    background-color: #800000;
-  }
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Adjust this to only affect buttons */
+.fc-button {
+    background-color: white;
+    color: #007bff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.fc-button:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+.fc-toolbar-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Make sure this doesn't hide the calendar days and dates */
+.fc-day, .fc-day-number {
+    border: 1px solid #ddd;
+    color: black; /* Ensure the text is visible */
+}
+
+/* Today’s date style */
+.fc-day-today {
+    background-color: #e9ecef;
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Ensure the numbers are shown */
+.fc-daygrid-day-number {
+    color: black;
+    font-size: 1rem;
+}
+
+.fc-event {
+    background-color: #007bff;
+    color: white;
+    border-radius: 3px;
+    padding: 5px;
+    border: none;
+}
+
+.fc-event:hover {
+    background-color: #0056b3;
+    cursor: pointer;
+}

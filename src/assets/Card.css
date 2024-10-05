@@ -1,0 +1,36 @@
+/* src/Card.css */
+.card {
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 15px;
+    overflow: hidden;
+    transition: transform 0.2s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+  }
+  
+  .card-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-content {
+    padding: 15px;
+    background-color: #f9f9f9;
+  }
+  
+  /* src/App.css */
+  .home-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center cards */
+  }
+  

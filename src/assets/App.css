@@ -1,0 +1,40 @@
+.header{
+  background-color: #800000;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 10vh;
+  width: 205vh;
+}
+.header-title{
+position: absolute;
+left: 80vh;
+}
+.sidebar{
+position: absolute;
+}
+
+.sidebar-container {
+width: 250px; /* Sidebar width */
+background-color: #f4f4f4; /* Sidebar color */
+z-index: 3;
+}
+
+.app-container {
+display: flex;
+flex-direction: column;
+}
+
+.content {
+padding: 20px; /* Add some padding around the content */
+}
+
+.full-calendar-container {
+  width: 100%; 
+  height: 100vh; 
+  position: absolute;
+  align-items: center; 
+  justify-content: center; 
+  left: 0;
+  top: 100px;
+}

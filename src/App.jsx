@@ -1,19 +1,30 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Header from './assets/Header';
-import WeekView from './assets/WeekView';
-import MonthView from './assets/MonthView';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Sidebar from "./assets/Sidebar.jsx";  
+import Calendar from "./assets/Calendar.jsx";  
+import Settings from "./assets/Settings.jsx";  
+import Events from "./assets/Events.jsx";
+import Home from "./assets/Home.jsx";
+import './assets/App.css';
 
-function App() {
+const App = () => {
     return (
-        <Router>
-            <Header></Header>
-            <Routes>
-                <Route path="/week" element={<WeekView />} />
-                <Route path="/month" element={<MonthView />} />
-                <Route path="/" element={<MonthView />} /> 
+      <Router>
+        <div className="header">
+        <Sidebar />
+        <div className="app-container">
+          <main className="content">
+            <Routes> 
+            <Route path="/" element={<Home />} /> 
+            <Route path="/calendar" element={<Calendar />} />
+              <Route path="/events" element={<Events />} />
+              <Route path="/settings" element={<Settings />} />
             </Routes>
-        </Router>
+          </main>
+          </div>
+        </div>
+      </Router>
     );
-}
+  };
 
-export default App;
+  export default App;
