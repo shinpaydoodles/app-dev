@@ -22,7 +22,7 @@ const Sidebar = () => {
           <button className="close-btn" onClick={closeSidebar}>X</button>
           </div> 
           <ul className='sidebar-link'>
-            <li className='home' id='sidebar-hover'><Link to="/">Home</Link></li>
+          <Link to="/"><li className='home' id='sidebar-hover'>Home</li></Link>
             <li className='calendar' id='sidebar-hover'><Link to="/calendar">Calendar</Link></li>
             <li className='events' id='sidebar-hover'><Link to="/events">Events</Link></li>
             <li className='settings' id='sidebar-hover'><Link to="/settings">Settings</Link></li>
