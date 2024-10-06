@@ -1,21 +1,84 @@
 
+@import "https://cssicon.space/css/icons.css";
 
-.sidebar.open {
+/* Styles for the toggle button icon animation */
+.icon{
+    left: 225px;
+    z-index: 999;
+    color: #ffffff;
+  }
+  
+  .icon:before {
+    content: '';
+    top: 10px;
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    color: #ffffff;
+    transition: all 0.4s ease;
+  }
+  
+  .icon:after {
+    content: '';
+    top: 10px;
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    transition: all 0.4s ease;
+    color: #ffffff;
+  }
+  
+  
+  .icon.menu:before, .icon.menu:after {
+    transform: rotate(0);  
+    color: #ffffff;
+  } 
+  
+  
+  .icon.close:before {
+    transform: rotate(45deg);  
+    top: 0;  
+  }
+  
+  .icon.close:after {
+    transform: rotate(-45deg);  
+    top: 0;  
+  }
+  
+
+  .icon.close {
+    background-color: transparent;
+
+  }
+  
+
+  .icon, .icon:before, .icon:after {
+    transition: transform 0.4s ease, top 0.4s ease;
+  }
+  
+
+  .sidebar.open {
     transform: translate(0);
-}
-
-.close-btn {
+  }
+  
+  .close-btn {
     background-color: #ffffff;
     z-index: 100;
     position: fixed;
-    top: 7vh; /* Adjust if needed */
-    left: 30vh; /* Adjust if needed */
-}
+    top: 7vh; 
+    left: 30vh; 
+  }
+  
 
-.toggle-button {
-    font-size: 24px;
+  .icon {
+    height: 15px;
+    width: 30px;
     cursor: pointer;
-}
+    color: #ffffff;
+  }
+  
+
+
 
 .sidebar-title {
     background-color: #800000;
@@ -34,6 +97,7 @@
 .li{
     list-style-type: none;
     text-decoration: none;
+
 }
 /* Sidebar.css */
 .header {
@@ -49,24 +113,26 @@
     font-size: 24px;
     background: none;
     border: none;
-    color: white;
+    color: rgb(0, 0, 0);
     cursor: pointer;
     position: absolute;
+    height: 15px;
+    left: 230px;
   }
   
   .sidebar.active {
+    position: fixed;
     width: 35vh;
     top: 0;
     left: 0;
     height: 100vh;
     background-color: #ffffff;
     color: white;
-    transition: 0.3s ease;
+    transition: 1.5s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
   
   .close-btn {
-    background: 1px solid black;
     border: none;
     font-size: 30px;
     color: #ffffff;
@@ -78,8 +144,8 @@
   .sbt{
     background-color: #800000;
     height: 94px;
-    position: relative;
-    width: 37vh;
+    position: fixed;
+    width: 35vh;
     top: 0;
     left: 0;
     z-index: 999;
@@ -91,28 +157,41 @@
     text-decoration: none;
   }
 .home{
-    height: 5vh;
+    height: 7vh;
     width: 35vh;
     position: fixed;
-    top: 100px;
+    top: 120px;
     left: 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     color: #800000;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
 }
 .calendar{
-    height: 5vh;
+    height: 7vh;
     width: 35vh;
     position: fixed;
-    top: 150px;
+    top: 190px;
     left: 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     color: #800000;
 }
 .events{
-    height: 5vh;
+    height: 7vh;
     width: 35vh;
     position: fixed;
-    top: 200px;
+    top: 285px;
+    left: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #800000;
+}
+.holidays{
+    height: 7vh;
+    width: 35vh;
+    position: fixed;
+    top: 355px;
     left: 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     color: #800000;
@@ -121,7 +200,7 @@
     height: 5vh;
     width: 35vh;
     position: fixed;
-    top: 250px;
+    top: 500px;
     left: 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     color: #800000;
@@ -130,7 +209,7 @@
     height: 5vh;
     width: 35vh;
     position: fixed;
-    top: 300px;
+    top: 700px;
     left: 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     color: #800000;
@@ -140,4 +219,22 @@
     color: white; 
     cursor: pointer; 
     transition: background-color 0.3s ease, color 0.3s ease; 
+  }
+  .divider{
+    height: 1vh;
+    width: 35vh;
+    position: fixed;
+    top: 420px;
+    left: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #800000;
+  }
+  .divider2{
+    height: 1vh;
+    width: 35vh;
+    position: fixed;
+    top: 260px;
+    left: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #800000;
   }

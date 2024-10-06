@@ -7,7 +7,7 @@ const Header = ({ title, toggleSidebar }) => {
       <h1 className='header-title'>{title}</h1>
 
       <button className="sidebar-toggle-btn" onClick={toggleSidebar}>
-        ☰
+
       </button>
     </header>
   );

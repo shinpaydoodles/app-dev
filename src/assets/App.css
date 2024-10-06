@@ -30,11 +30,12 @@ padding: 20px; /* Add some padding around the content */
 }
 
 .full-calendar-container {
-  width: 100%; 
+  width: 200vh; 
   height: 100vh; 
   position: absolute;
   align-items: center; 
   justify-content: center; 
-  left: 0;
+  left: 20px;
   top: 100px;
+  margin-bottom: 100px;
 }
