@@ -1,0 +1,101 @@
+.card-container1 {
+    height: 100px;
+    width: 100px;
+  }
+  
+  .card1 {
+    height: 300px;
+    width: 300px;
+    top: 100px;
+    left: 600px;
+    position: absolute;
+    align-self: center;
+  }
+  
+  .card-image1 {
+    height: 100%; 
+    width: auto; 
+    display: block;
+  }
+  .card-title{
+    color: #800000;
+  }
+
+
+  .card-container2 {
+    height: 100px;
+    width: 100px;
+  }
+  
+  .card2 {
+    height: 300px;
+    width: 300px;
+    top: 500px;
+    left: 600px;
+    position: absolute;
+    align-self: center;
+  }
+  
+  .card-image2 {
+    height: 100%; 
+    width: auto; 
+    display: block;
+  }
+  
+  .card-container3 {
+    height: 100px;
+    width: 100px;
+  }
+  
+  .card3 {
+    height: 300px;
+    width: 300px;
+    top: 910px;
+    left: 600px;
+    position: absolute;
+    align-self: center;
+  }
+  
+  .card-image3 {
+    height: 100%; 
+    width: auto; 
+    display: block;
+  }
+  .card-container4 {
+    height: 100px;
+    width: 100px;
+  }
+  
+  .card4 {
+    height: 300px;
+    width: 300px;
+    top: 1350px;
+    left: 600px;
+    position: absolute;
+    align-self: center;
+  }
+  
+  .card-image4 {
+    height: 100%; 
+    width: auto; 
+    display: block;
+  }
+  .card-container5 {
+    height: 100px;
+    width: 100px;
+  }
+  
+  .card5 {
+    height: 300px;
+    width: 300px;
+    top: 1700px;
+    left: 600px;
+    position: absolute;
+    align-self: center;
+  }
+  
+  .card-image5 {
+    height: 100%; 
+    width: auto; 
+    display: block;
+  }

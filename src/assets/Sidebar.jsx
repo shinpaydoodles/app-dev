@@ -5,17 +5,14 @@ import './Sidebar.css';
 
 const Sidebar = () => {
   const [isActive, setIsActive] = useState(false);
-  const [isMenuIcon, setIsMenuIcon] = useState(true); // State for toggle button icon
+  const [isMenuIcon, setIsMenuIcon] = useState(true); 
 
   const toggleSidebar = () => {
     setIsActive(!isActive);
-    setIsMenuIcon(!isMenuIcon); // Toggle between menu and close icon
+    setIsMenuIcon(!isMenuIcon); 
   };
 
-  const closeSidebar = () => {
-    setIsActive(false);
-    setIsMenuIcon(true); // Reset to menu icon
-  };
+
 
   return (
     <div className='sidebar-container'>
@@ -32,11 +29,13 @@ const Sidebar = () => {
             <Link to="/"><li className='home' id='sidebar-hover'>Home</li></Link>
             <Link to="/calendar"><li className='calendar' id='sidebar-hover'>Calendar</li></Link>
             <li className='divider'></li>
-            <li className='events' id='sidebar-hover'><Link to="/events">Events</Link></li>
-            <li className='holidays' id='sidebar-hover'><Link to="/holidays">Holidays</Link></li>
+            <Link to="/events"><li className='events' id='sidebar-hover'>Events</li></Link>
+            <Link to="/holidays"><li className='holidays' id='sidebar-hover'>Holidays</li></Link>
             <li className='divider2'></li>
-            <li className='settings' id='sidebar-hover'><Link to="/settings">Settings</Link></li>
-            <li className='visit' id='sidebar-hover'><a href="https://www.facebook.com/CIC.Cabanatuan" target="_blank" rel="noopener noreferrer">Visit Us</a></li>
+            <div className='iconbg'></div>
+            <li className='divider3'></li>
+            <Link to="/settings"><li className='settings' id='sidebar-hover'>Settings</li></Link>
+            <li className='visit' id='sidebar-hover'><a href="https://www.facebook.com/CIC.Cabanatuan" target="_blank" rel="noopener noreferrer" className='visit'>Visit Us</a></li>
           </ul>
         </nav>
       )}
